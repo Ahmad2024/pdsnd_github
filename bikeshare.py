@@ -214,14 +214,14 @@ def user_stats(df):
     df = df.drop(['month', 'day_of_week'], axis = 1)
     row_index = 0
 
-    see_data = input("\nYou like to see rows of the data used to compute the stats? Please write 'yes' or 'no' \n").lower()
+    see_data = input("\nYou like to see rows of the data used to compute the stats? Kindly write 'yes' or 'no' \n").lower()
     while True:
         if see_data == 'no':
             return
         if see_data == 'yes':
             print(df[row_index: row_index + 5])
             row_index = row_index + 5
-        see_data = input("\n Would you like to see five more rows of the data used to compute the stats? Please write 'yes' or 'no' \n").lower()
+        see_data = input("\n Would you like to see five more rows of the data used to compute the stats? Kindly write 'yes' or 'no' \n").lower()
 
 
 def main():

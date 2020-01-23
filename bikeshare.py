@@ -16,7 +16,7 @@ def get_filters():
         (str) month - name of the month to filter by, or "all" to apply no month filter
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
-    print('Hello! Let\'s explore some US bikeshare data!')
+    print('Hello user! Let\'s explore some US bikeshare data!')
     # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     
     city = input('\nWould you like to see data for Chicago, New York, or Washington?\n').lower()
@@ -214,14 +214,14 @@ def user_stats(df):
     df = df.drop(['month', 'day_of_week'], axis = 1)
     row_index = 0
 
-    see_data = input("\nYou like to see rows of the data used to compute the stats? Please write 'yes' or 'no' \n").lower()
+    see_data = input("\nYou like to see rows of the data used to compute the stats? Kindly write 'yes' or 'no' \n").lower()
     while True:
         if see_data == 'no':
             return
         if see_data == 'yes':
             print(df[row_index: row_index + 5])
             row_index = row_index + 5
-        see_data = input("\n Would you like to see five more rows of the data used to compute the stats? Please write 'yes' or 'no' \n").lower()
+        see_data = input("\n Would you like to see five more rows of the data used to compute the stats? Kindly write 'yes' or 'no' \n").lower()
 
 
 def main():

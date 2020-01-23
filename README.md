@@ -6,6 +6,6 @@ Subject ### Explore US Bikeshare Data
 
 Descreption ### Use python and statistics to understand U.S. bikeshare data.
 
-Date files ### chicago.csv \ new_york_city.csv \ washington.csv
+Data files ### chicago.csv \ new_york_city.csv \ washington.csv
 
 Please check Udacity's tips to submit your project successfully!
